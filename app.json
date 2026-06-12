@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Food Waste App",
+    "slug": "food-waste-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#16a34a"
+    },
+    "scheme": "foodwaste",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.foodwaste.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Precisamos da câmera para reconhecer alimentos.",
+        "NSPhotoLibraryUsageDescription": "Acesso às fotos para identificar alimentos."
+      }
+    },
+    "android": {
+      "package": "com.foodwaste.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#16a34a"
+      },
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE"]
+    },
+    "web": { "favicon": "./assets/icon.png" },
+    "plugins": [
+      "expo-router",
+      "expo-camera",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#16a34a"
+        }
+      ]
+    ]
+  }
+}
